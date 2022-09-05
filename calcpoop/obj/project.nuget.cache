@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ki2+/2U8lEwKNeHjh5iFAZpylNLg+70Ebd9jAn8l9vs4z7f5Acmff8tUg90mfF2+4GEF3DLOgSqpTbAWDBGAiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Moonlight\\Desktop\\calcpoop\\calcpoop\\calcpoop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Moonlight\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512",
+    "C:\\Users\\Moonlight\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Moonlight\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Moonlight\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
