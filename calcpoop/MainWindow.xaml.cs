@@ -21,15 +21,28 @@ namespace calcpoop
     public partial class MainWindow : Window
     {
 
-        double RightOperand = 0; //Правый операнд
-        double LeftOperand = 0; //Левый операнд
-        double Result = 0; //Результат
-        int OperIndex = 0; //Индекс операции
-        // 0 - не задано, 1 - сложение, 2 - вычитание, 3 - умножение, 4 - деление
-        bool Wait4ROperand = false; //Ожидание правого операнда
-        bool TriedDivByZero = false; //Попытка деления на ноль
-        string NumClick = "N/A"; //Буфер для цифровых кнопок
-        string ActClick = "N/A"; //Буфер для функциональных кнопок
+        //Объявление переменных
+
+        double RightOperand; //Правый операнд
+        double LeftOperand; //Левый операнд
+        double Result; //Результат
+        int OperIndex; //Индекс операции
+        bool Wait4ROperand; //Ожидание правого операнда
+        bool TriedDivByZero; //Попытка деления на ноль
+        string NumClick; //Буфер для цифровых кнопок
+        string ActClick; //Буфер для функциональных кнопок
+
+        public void ResetVars() //Метод для сброса переменных
+        {
+            RightOperand = 0;
+            LeftOperand = 0;
+            Result = 0;
+            OperIndex = 0; // 0 - не задано, 1 - сложение, 2 - вычитание, 3 - умножение, 4 - деление
+            Wait4ROperand = false;
+            TriedDivByZero = false;
+            NumClick = "N/A";
+            ActClick = "N/A";
+        }
 
         void UpdateDebugInfo() //Метод для обновления отладочной инфы внизу окна
         {
@@ -45,6 +58,7 @@ namespace calcpoop
         public MainWindow()
         {
             InitializeComponent();
+            ResetVars();
             UpdateDebugInfo();
         }
 
@@ -135,18 +149,9 @@ namespace calcpoop
         private void Button_ClearClick(object sender, RoutedEventArgs e)
         {
 
-            //Вернуть все переменные на исходные значения
-
             CalcInputField.Text = ""; // И очистить поле вывода
 
-            RightOperand = 0;
-            LeftOperand = 0;
-            Result = 0;
-            OperIndex = 0;
-            Wait4ROperand = false;
-            TriedDivByZero = false;
-            NumClick = "N/A";
-            ActClick = "N/A";
+            ResetVars(); //Вернуть все переменные на исходные значения
 
             UpdateDebugInfo(); //Отладку тоже
         }
